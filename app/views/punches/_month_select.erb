@@ -4,9 +4,9 @@
         
     }
 </script>
-<%=	 form_tag do %>
+<%	 form_tag '' do -%>
 <%=	select_month(Date.today, :use_month_numbers => true)%>
 <%= select_year(Date.today, :end_year => Date.today.year)%>
 <%=	image_tag "add.jpg" ,:onclick => "newCardDate();",
                  :plugin => "redmine_time_card" %>
-<%=	 end %>
+<%	 end -%>
